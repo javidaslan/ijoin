@@ -1,0 +1,314 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 21, 2017, 9:49:30 PM
+    Author     : Aslanov
+*/
+
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}  
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+.item span {
+    font-style: normal;
+}
+.panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+.panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.panel-footer {
+    background-color: white !important;
+}
+.panel-footer h3 {
+    font-size: 32px;
+}
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+      font-size: 150px;
+  }
+}
+/*oz css lerim*/
+#img_container {
+   
+    text-align:center;
+    width:100%;
+   
+}
+
+.btn {
+    
+	position:absolute;
+	z-index:1000;
+    bottom:50%;
+    right:45%;
+	left:45%;
+    width:100px;
+    height:30px;
+	margin:0px -50px -15px 0px;
+	
+}
+.container {
+	margin-bottom:10px;
+}
+
+#getStarted{
+	position:absolute;
+	z-index:1000;
+  bottom:50%;
+  right:50%;
+  width:160px;
+  height:50px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: white;
+  font-size: 20px;
+  background: #F4511E;
+  padding: 10px 20px 10px 20px;
+  border: solid #F4511E 2px;
+  text-decoration: none;
+}
+#googleMap{
+	margin-top:15px;
+}
+ #mapHeader{
+	text-align:center;
+	width:100%;
+	height:40px;
+	background-color:#efefef;
+ }
+ h3{
+	margin-top:5px;
+ }
+
+
+ #getStarted:hover {
+    background: white;
+    color: black!important;
+    text-decoration: none;
+  }
+
+#goTo:hover
+{
+  color: black;text-decoration: none!important;
+}
+#goTo
+{
+  color: white;text-decoration: none!important;
+}
+
+  .col-centered{ margin: auto;}
+  
+  #shiva
+{
+  width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:black;
+  margin-left:30px;
+  font-size:25px;
+}
+
+.btnMap {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #96bfd9);
+  background-image: -moz-linear-gradient(top, #ffffff, #96bfd9);
+  background-image: -ms-linear-gradient(top, #ffffff, #96bfd9);
+  background-image: -o-linear-gradient(top, #ffffff, #96bfd9);
+  background-image: linear-gradient(to bottom, #ffffff, #96bfd9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width:150px;
+}
+
+.btnMap:hover {
+  background: #b8a2b8;
+  text-decoration: none;
+}
+
+
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
